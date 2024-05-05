@@ -28,9 +28,9 @@ The library I have created, named `Chrome-xp-api-adapter.dll`. To use, it can be
 ### Limitations:
 - Intended for `XP SP3 x86` (may work on Server 2003) (but XP SP2 and less not supported here, same as x64).
 - It supports only English locales and Default locales for simplify and minimize size. (but works with another languages to translate pagaes for ex and to show user interface). So more complex implementation may be not requered.
-But current implementation _requeres to manually change the language from Settings_.
+But current implementation _requeres to manually change the language from Settings_. (issue #2)
 - All not called functions was replaced by stubs (in addition to existing stubs inside original dll, returning error code). So it can crash on internal __debugbreak(), if Some function called, which was not called on my machine. Though on both of my machines it now works w/o such problems.
-- On WebGL tests it can be slow, compared to original DLL. Because it was intended for slow machines with 1-2 cores for first. (also to simplify the code). And I will check this.
+- On WebGL tests it can be slow, compared to original DLL (issue #1). Because it was intended for slow machines with 1-2 cores for first. (also to simplify the code). And I will check this.
 
 <hr>
 <p align=right>(c) IDA-RE-things, 2024<br>

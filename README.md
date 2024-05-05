@@ -2,7 +2,7 @@
 
 <hr>
 
-"source-available", lighweight and faster alternative to progwrp.dll for Supermium/Thorium and others unbranded Chromium-based browsers (may be), running on XP.
+"source-available", lighweight alternative to progwrp.dll for Supermium/Thorium and others unbranded Chromium-based browsers (may be), running on XP.
 
 <hr>
 UPD: Initially I have started this project to be open-source alternative.

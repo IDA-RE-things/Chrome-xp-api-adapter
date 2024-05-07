@@ -26,11 +26,9 @@ The library I have created, named `Chrome-xp-api-adapter.dll`. To use, it can be
 Сompiled DLL (in Releases section) is only ~20 kb vs 136 kb original.
 
 ### Limitations:
-- Intended for `XP SP3 x86` (may work on Server 2003) (but XP SP2 and less not supported here, same as x64 native). (x86 on x64 will be fixed soon)
+- Originally intended for `XP SP3 x86` (which I use) (but also works now on Server2003 SP2, XP SP2) (No x64 native versions. Can run on Win7 x64 using 32bit and XP-only API). Win7 not requeres such DLL at all, because it just redirects API calls under this OS) (and Throrium builds is example of this).
 - It supports only English locales and Default locales for simplify and minimize size. (but works with another languages to translate pagaes for ex and to show user interface). So more complex implementation may be not requered.
 The current implementation _requeres to manually change the language from Settings_. (issue #2)
-- All not called functions was replaced by stubs (in addition to existing stubs inside original dll, returning error code). So it can crash on internal __debugbreak(), if Some function called, which was not called on my machine. Though on both of my machines it now works w/o such problems.
-- ~~On WebGL tests it can be slow, compared to original DLL (issue #1). Because it was intended for slow machines with 1-2 cores for first. (also to simplify the code). And I will check this~~. (Fixed)
 
 <hr>
 <p align=right>(c) IDA-RE-things, 2024<br>

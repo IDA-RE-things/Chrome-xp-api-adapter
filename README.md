@@ -25,8 +25,8 @@ The library I have created, named `Chrome-xp-api-adapter.dll`. To use, it can be
 
 Сompiled DLL (in Releases section) is only ~20 kb vs 136 kb original.
 
-### Limitations:
-- Originally intended for `XP SP3 x86` (which I use) (but also works now on Server2003 SP2, XP SP2) (No x64 native versions. Can run on Win7 x64 using 32bit and XP-only API). Win7 not requeres such DLL at all, because it just redirects API calls under this OS) (and Throrium builds is example of this).
+### Current Limitations:
+- Originally intended for `XP SP3 x86` (which I use) (but also works now on Server2003 SP2, XP SP2) (No x64 native versions (and have no plans for this). Can run on Win7 x64 using 32bit and XP-only API). Win7 not requeres such DLL at all, because it just redirects API calls under this OS) (and Throrium builds is example of this).
 - It supports only English locales and Default locales for simplify and minimize size. (but works with another languages to translate pagaes for ex and to show user interface). So more complex implementation may be not requered.
 The current implementation _requeres to manually change the language from Settings_. (issue #2)
 

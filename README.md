@@ -26,7 +26,7 @@ The library I have created, named `Chrome-xp-api-adapter.dll`. To use, it can be
 Сompiled DLL (in Releases section) is only ~20 kb vs 136 kb original.
 
 ### Current Limitations:
-- Originally intended for `XP SP3 x86` (which I use) (but also works now on: Server2003 SP2, XP SP2) (No x64 native versions (and have no plans for this). Can run on Win7 x64 using 32bit and XP-only API). Win7 not requeres such DLL at all, because it just redirects API calls under this OS) (and Thorium builds is example of this).
+- Originally intended for `XP SP3 x86` (which I use) (but also works now on: Server2003 SP2, XP SP2) (No x64 native versions (and have no plans for this)). Win7 not requeres such DLL at all, because it just redirects API calls under this OS) (and Thorium builds is example of this).
 - It supports only reach set of locales for simplify and minimize size (English, De, Ru). (But works with another languages to translate pagaes and to show user interface). So more complex implementation may be not requered.
 The current implementation _requeres to manually change the language from Settings_. (issue #2)
 - Also to simplify and minimize size, All not called functions was replaced by stubs (in addition to existing stubs inside original dll, returning error code). So it can crash on internal __debugbreak(), if Some function called, which was not called on my machine. Though on both of my machines it now works w/o such problems. I dont test it with all possible usage scenarios, like all features of DevTools for ex. (though it works) This alternative intended for usual web browsing for first.

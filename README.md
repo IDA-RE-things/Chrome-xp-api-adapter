@@ -31,9 +31,10 @@ The library I have created, named `Chrome-xp-api-adapter.dll`. To use, it can be
 The current implementation _requeres to manually change the language from Settings_. (issue #2)
 - Also to simplify and minimize size, All not called functions was replaced by stubs (in addition to existing stubs inside original dll, returning error code). So it can crash on internal __debugbreak(), if Some function called, which was not called on my machine. Though on both of my machines it now works w/o such problems. I dont test it with all possible usage scenarios, like all features of DevTools for ex. (though it works) This alternative intended for usual web browsing for first.
 - You will not see differences, except on real slow/intermediate machines, especially running on HDD drives. It can't replace other lack of the whole browser optimizations (and not just changing the compiler switches). So dont expect impossible from this replacement DLL.
-  In other cases its just my own alternative implementation. But I use only it on my machines.
-- This is just my "Proof of concept" that this DLL can be reproduced and enhanced.
+- In other cases its just my own alternative implementation. But I use only it on my machines.
+- This is just my "Proof of concept" that this DLL can be reproduced and enhanced. And people, who really wants sources and has experience for this, can do it in such way.
 
+- the Full (and not stripped-down) versions os such kind of DLL's I'm use over times (~from 2014 yr, when XP suport was gone here or here), -- in other software on my machines, to be compatible with XP. You can see about me in my profile.
 <hr>
 <p align=right>(c) IDA-RE-things, 2024<br>
 https://github.com/IDA-RE-things/Chrome-xp-api-adapter

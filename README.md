@@ -26,10 +26,13 @@ The library I have created, named `Chrome-xp-api-adapter.dll`. To use, it can be
 Сompiled DLL (in Releases section) is only ~20 kb vs 136 kb original.
 
 ### Current Limitations:
-- Originally intended for `XP SP3 x86` (which I use) (but also works now on: Server2003 SP2, XP SP2) (No x64 native versions (and have no plans for this)). Win7 not requeres such DLL at all, because it just redirects API calls under this OS) (and Thorium builds is example of this).
+- Originally intended for `XP SP3 x86` (which I use) (but also works now on: Server2003 SP2, XP SP2) (No x64 native versions (and have no plans for this)). Win7 not requeres such DLL at all, because it {original} just redirects API calls under this OS) (and Thorium builds is example of this).
 - It supports only reach set of locales for simplify and minimize size (English, De, Ru). (But works with another languages to translate pagaes and to show user interface). So more complex implementation may be not requered.
 The current implementation _requeres to manually change the language from Settings_. (issue #2)
 - Also to simplify and minimize size, All not called functions was replaced by stubs (in addition to existing stubs inside original dll, returning error code). So it can crash on internal __debugbreak(), if Some function called, which was not called on my machine. Though on both of my machines it now works w/o such problems. I dont test it with all possible usage scenarios, like all features of DevTools for ex. (though it works) This alternative intended for usual web browsing for first.
+- You will not see differences, except on real slow/intermediate machines, especially running on HDD drives. It can't replace other lack of the whole browser optimizations (and not just changing the compiler switches). So dont expect impossible from this replacement DLL.
+  In other cases its just my own alternative implementation. But I use only it on my machines.
+- This is just my "Proof of concept" that this DLL can be reproduced and enhanced.
 
 <hr>
 <p align=right>(c) IDA-RE-things, 2024<br>

@@ -52,7 +52,7 @@ The current implementation _requeres to manually change the language from Settin
 - In other cases its just my own alternative implementation. But I use only it on my machines with XP.
 - This is just my "Proof of concept" that this DLL can be reproduced and enhanced. And people, who really wants sources and has experience for this, can do it in such way.
 
-- the Full (and not stripped-down) versions os such kind of DLL's I'm use over times (~from 2014 yr, when XP suport was gone here or here), -- in other software on my machines, to be compatible with XP. More info about me you can see in my profile.
+- the Full (and not stripped-down) versions os such kind of DLL's I'm use over times (~from 2014 yr, when XP suport was gone here or here), -- in other software on my computers, to be compatible with XP.
 <hr>
 <p align=right>(c) IDA-RE-things, 2024<br>
 https://github.com/IDA-RE-things/Chrome-xp-api-adapter

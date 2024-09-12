@@ -39,7 +39,7 @@ I have spent ~2 weeks of my time to initial creation and then debug/understand s
 
 <hr>
 
-The library I have created, named `Chrome-xp-api-adapter.dll`. To use, it can be renamed to progwrp.dll for existing Chrome.exe/dll binary. (of above browsers)
+The library I have created, named `Chrome-xpapi-adapter.dll`. To use, it can be renamed to progwrp.dll for existing Chrome.exe/dll binary. (of above browsers)
 
 Сompiled DLL (in Releases section) is only ~20 kb vs 136 kb original.
 
